@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>CollegeHub | Placement Preparation</title>
+
+    <link
+        rel="stylesheet"
+        href="css/style.css"
+    >
+
+</head>
+
+
+<body>
+
+
+<!-- ==========================================
+     HEADER
+     ========================================== -->
+
+<header class="topbar">
+
+    <a
+        class="brand"
+        href="index.html"
+    >
+
+        <span>CH</span>
+
+        CollegeHub
+
+    </a>
+
+
+    <nav>
+
+        <a href="pages/dashboard.html">
+            Dashboard
+        </a>
+
+        <a href="pages/tasks.html">
+            Tasks
+        </a>
+
+        <a href="pages/placement.html">
+            Placement
+        </a>
+
+        <a href="pages/notes.html">
+            Notes
+        </a>
+
+        <a href="pages/interview.html">
+            Interview Prep
+        </a>
+
+    </nav>
+
+
+    <button
+        id="themeBtn"
+        class="icon-btn"
+    >
+        🌙
+    </button>
+
+</header>
+
+
+
+<!-- ==========================================
+     HERO SECTION
+     ========================================== -->
+
+<main>
+
+
+<section class="hero-section">
+
+
+    <div class="hero-content">
+
+
+        <span class="hero-badge">
+            🚀 Placement Preparation Platform
+        </span>
+
+
+        <h1>
+
+            Prepare Smarter.
+            <br>
+
+            <span>Get Placement Ready.</span>
+
+        </h1>
+
+
+        <p>
+
+            CollegeHub helps you manage interview preparation,
+            placement tasks, notes and mock interviews
+            from one simple dashboard.
+
+        </p>
+
+
+        <div class="hero-actions">
+
+
+            <a
+                href="pages/interview.html"
+                class="hero-primary-btn"
+            >
+
+                🎯 Start Interview Preparation
+
+            </a>
+
+
+            <a
+                href="pages/dashboard.html"
+                class="hero-secondary-btn"
+            >
+
+                📊 View Dashboard
+
+            </a>
+
+        </div>
+
+
+    </div>
+
+
+    <div class="hero-card">
+
+
+        <div class="hero-card-icon">
+            🎓
+        </div>
+
+
+        <h3>
+            Your Placement Journey
+        </h3>
+
+
+        <p>
+            Learn → Practice → Track → Improve
+        </p>
+
+
+        <div class="hero-mini-stats">
+
+
+            <div>
+
+                <strong id="homeCompleted">
+                    0
+                </strong>
+
+                <span>
+                    Completed
+                </span>
+
+            </div>
+
+
+            <div>
+
+                <strong id="homeBookmarks">
+                    0
+                </strong>
+
+                <span>
+                    Bookmarked
+                </span>
+
+            </div>
+
+
+            <div>
+
+                <strong id="homeMock">
+                    0
+                </strong>
+
+                <span>
+                    Mock Tests
+                </span>
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+
+</section>
+
+
+
+<!-- ==========================================
+     SEARCH
+     ========================================== -->
+
+<section class="home-section">
+
+
+    <div class="home-section-heading">
+
+        <h2>
+            🔍 Search Interview Questions
+        </h2>
+
+        <p>
+            Quickly find questions from HTML, CSS,
+            JavaScript, DSA and more.
+        </p>
+
+    </div>
+
+
+    <div class="home-search-box">
+
+
+        <input
+            type="text"
+            id="homeSearch"
+            placeholder="Search interview questions..."
+        >
+
+
+        <button
+            id="homeSearchBtn"
+        >
+            Search
+        </button>
+
+
+    </div>
+
+
+</section>
+
+
+
+<!-- ==========================================
+     CATEGORIES
+     ========================================== -->
+
+<section class="home-section">
+
+
+    <div class="home-section-heading">
+
+        <h2>
+            📚 Interview Categories
+        </h2>
+
+        <p>
+            Choose a topic and start practicing.
+        </p>
+
+    </div>
+
+
+    <div class="home-category-grid">
+
+
+        <a
+            href="pages/interview.html?category=HTML"
+            class="home-category-card"
+        >
+
+            <span>
+                🌐
+            </span>
+
+            <h3>
+                HTML
+            </h3>
+
+            <p>
+                4 Questions
+            </p>
+
+        </a>
+
+
+
+        <a
+            href="pages/interview.html?category=CSS"
+            class="home-category-card"
+        >
+
+            <span>
+                🎨
+            </span>
+
+            <h3>
+                CSS
+            </h3>
+
+            <p>
+                4 Questions
+            </p>
+
+        </a>
+
+
+
+        <a
+            href="pages/interview.html?category=JavaScript"
+            class="home-category-card"
+        >
+
+            <span>
+                ⚡
+            </span>
+
+            <h3>
+                JavaScript
+            </h3>
+
+            <p>
+                11 Questions
+            </p>
+
+        </a>
+
+
+
+        <a
+            href="pages/interview.html?category=DSA"
+            class="home-category-card"
+        >
+
+            <span>
+                🧠
+            </span>
+
+            <h3>
+                DSA
+            </h3>
+
+            <p>
+                1 Question
+            </p>
+
+        </a>
+
+
+    </div>
+
+
+</section>
+
+
+
+<!-- ==========================================
+     QUICK ACTIONS
+     ========================================== -->
+
+<section class="home-section">
+
+
+    <div class="home-section-heading">
+
+        <h2>
+            ⚡ Quick Actions
+        </h2>
+
+    </div>
+
+
+    <div class="home-actions-grid">
+
+
+        <a
+            href="pages/interview.html"
+            class="home-action-card"
+        >
+
+            <span>
+                🎯
+            </span>
+
+            <div>
+
+                <h3>
+                    Practice Questions
+                </h3>
+
+                <p>
+                    Improve your interview knowledge.
+                </p>
+
+            </div>
+
+        </a>
+
+
+
+        <a
+            href="pages/interview.html"
+            class="home-action-card"
+        >
+
+            <span>
+                🎤
+            </span>
+
+            <div>
+
+                <h3>
+                    Mock Interview
+                </h3>
+
+                <p>
+                    Test your preparation.
+                </p>
+
+            </div>
+
+        </a>
+
+
+
+        <a
+            href="pages/placement.html"
+            class="home-action-card"
+        >
+
+            <span>
+                💼
+            </span>
+
+            <div>
+
+                <h3>
+                    Placement
+                </h3>
+
+                <p>
+                    Track placement preparation.
+                </p>
+
+            </div>
+
+        </a>
+
+
+
+        <a
+            href="pages/notes.html"
+            class="home-action-card"
+        >
+
+            <span>
+                📝
+            </span>
+
+            <div>
+
+                <h3>
+                    My Notes
+                </h3>
+
+                <p>
+                    Save important study notes.
+                </p>
+
+            </div>
+
+        </a>
+
+
+    </div>
+
+
+</section>
+
+
+
+<!-- ==========================================
+     PROGRESS
+     ========================================== -->
+
+<section class="home-section">
+
+
+    <div class="home-progress-card">
+
+
+        <div>
+
+            <span class="home-progress-icon">
+                🎯
+            </span>
+
+        </div>
+
+
+        <div class="home-progress-content">
+
+            <h2>
+                Your Interview Progress
+            </h2>
+
+            <p id="homeProgressText">
+                Start practicing interview questions.
+            </p>
+
+
+            <div class="progress-track">
+
+                <div
+                    id="homeProgressBar"
+                    class="progress-fill"
+                ></div>
+
+            </div>
+
+
+        </div>
+
+
+        <strong
+            id="homeProgressPercent"
+        >
+            0%
+        </strong>
+
+
+    </div>
+
+
+</section>
+
+
+
+<!-- ==========================================
+     FOOTER
+     ========================================== -->
+
+<footer class="home-footer">
+
+    <h2>
+        CollegeHub 🎓
+    </h2>
+
+    <p>
+        Your personal placement preparation companion.
+    </p>
+
+    <p>
+        © 2026 CollegeHub. Built for students.
+    </p>
+
+</footer>
+
+
+</main>
+
+
+
+<script src="js/common.js"></script>
+
+<script src="js/home.js"></script>
+
+
+</body>
+
+</html>

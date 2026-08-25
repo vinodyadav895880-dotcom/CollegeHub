@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Interview Prep | CollegeHub</title>
+
+    <link
+        rel="stylesheet"
+        href="../css/style.css"
+    >
+
+</head>
+
+<body>
+
+
+<header class="topbar">
+
+    <a
+        class="brand"
+        href="../index.html"
+    >
+        <span>CH</span>
+        CollegeHub
+    </a>
+
+
+    <nav>
+
+        <a href="dashboard.html">
+            Dashboard
+        </a>
+
+        <a href="tasks.html">
+            Tasks
+        </a>
+
+        <a href="placement.html">
+            Placement
+        </a>
+
+        <a href="notes.html">
+            Notes
+        </a>
+
+        <a href="interview.html">
+            Interview Prep
+        </a>
+
+    </nav>
+
+
+    <button
+        id="themeBtn"
+        class="icon-btn"
+    >
+        🌙
+    </button>
+
+</header>
+
+
+
+<main class="container page">
+
+
+    <!-- PAGE HEADER -->
+
+    <div class="page-head">
+
+        <div>
+
+            <h1>
+                Interview Preparation
+            </h1>
+
+            <p>
+                Practice questions and track your interview preparation.
+            </p>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- OVERALL PROGRESS -->
+
+    <div class="progress-card">
+
+        <div class="progress-header">
+
+            <div>
+
+                <h2>
+                    Interview Progress
+                </h2>
+
+                <p>
+                    Complete questions to improve your preparation.
+                </p>
+
+            </div>
+
+
+            <div
+                id="progressPercentage"
+                class="progress-percentage"
+            >
+                0%
+            </div>
+
+        </div>
+
+
+        <div
+            id="progressText"
+            class="progress-info"
+        >
+            0 / 0 Completed
+        </div>
+
+
+        <div class="progress-track">
+
+            <div
+                id="progressBar"
+                class="progress-fill"
+            ></div>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- CATEGORY PROGRESS -->
+
+    <div class="category-progress-card">
+
+        <h2>
+            Category Progress
+        </h2>
+
+
+        <div
+            id="categoryProgress"
+            class="category-progress-grid"
+        ></div>
+
+    </div>
+
+
+
+    <!-- RANDOM QUESTION -->
+
+    <div class="random-question-card">
+
+        <div>
+
+            <h2>
+                🎲 Random Interview Question
+            </h2>
+
+            <p>
+                Test yourself with a random interview question.
+            </p>
+
+        </div>
+
+
+        <button id="randomQuestionBtn">
+            🎲 Random Question
+        </button>
+
+    </div>
+
+
+    <div
+        id="randomQuestion"
+        class="random-question-result"
+    ></div>
+
+
+
+    <!-- MOCK INTERVIEW HISTORY -->
+
+    <div class="history-card">
+
+        <div class="history-header">
+
+            <div>
+
+                <h2>
+                    📜 Mock Interview History
+                </h2>
+
+                <p>
+                    Track your previous mock interview performance.
+                </p>
+
+            </div>
+
+
+            <button
+                id="clearHistoryBtn"
+                class="clear-history-btn"
+            >
+                🗑️ Clear History
+            </button>
+
+        </div>
+
+
+        <div
+            id="historyStats"
+            class="history-stats"
+        ></div>
+
+
+        <div
+            id="mockHistory"
+            class="mock-history"
+        ></div>
+
+    </div>
+
+
+
+    <!-- MOCK INTERVIEW -->
+
+    <div class="mock-interview-card">
+
+        <div>
+
+            <h2>
+                🎤 Mock Interview
+            </h2>
+
+            <p>
+                Test yourself with 10 random interview questions.
+            </p>
+
+        </div>
+
+
+        <button
+            id="startMockBtn"
+            class="mock-start-btn"
+        >
+            🚀 Start Mock Interview
+        </button>
+
+    </div>
+
+
+
+    <!-- MOCK TIMER -->
+
+    <div
+        id="mockTimer"
+        class="mock-timer"
+    >
+        ⏱ 10:00
+    </div>
+
+
+
+    <!-- MOCK QUESTIONS -->
+
+    <div
+        id="mockInterview"
+        class="mock-interview-area"
+    ></div>
+
+
+
+    <!-- SEARCH AND FILTERS -->
+
+    <div class="interview-controls">
+
+        <input
+            type="text"
+            id="searchInput"
+            placeholder="🔍 Search interview questions..."
+        >
+
+
+        <select id="categoryFilter">
+
+            <option value="all">
+                All Categories
+            </option>
+
+        </select>
+
+
+        <select id="difficultyFilter">
+
+            <option value="all">
+                All Difficulty
+            </option>
+
+            <option value="Easy">
+                🟢 Easy
+            </option>
+
+            <option value="Medium">
+                🟡 Medium
+            </option>
+
+            <option value="Hard">
+                🔴 Hard
+            </option>
+
+        </select>
+
+
+        <select id="statusFilter">
+
+            <option value="all">
+                All Questions
+            </option>
+
+            <option value="completed">
+                ✓ Completed
+            </option>
+
+            <option value="pending">
+                Pending
+            </option>
+
+            <option value="bookmarked">
+                ⭐ Bookmarked
+            </option>
+
+        </select>
+
+    </div>
+
+
+
+    <!-- QUESTIONS -->
+
+    <div
+        id="questions"
+        class="list"
+    ></div>
+
+
+</main>
+
+
+
+<script src="../js/common.js"></script>
+
+<script src="../js/interview.js"></script>
+
+
+</body>
+
+</html>

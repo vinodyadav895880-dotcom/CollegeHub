@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Dashboard | CollegeHub</title>
+
+    <link
+        rel="stylesheet"
+        href="../css/style.css"
+    >
+
+</head>
+
+
+<body>
+
+
+<header class="topbar">
+
+    <a
+        class="brand"
+        href="../index.html"
+    >
+        <span>CH</span>
+        CollegeHub
+    </a>
+
+
+    <nav>
+
+        <a href="dashboard.html">
+            Dashboard
+        </a>
+
+        <a href="tasks.html">
+            Tasks
+        </a>
+
+        <a href="placement.html">
+            Placement
+        </a>
+
+        <a href="notes.html">
+            Notes
+        </a>
+
+        <a href="interview.html">
+            Interview Prep
+        </a>
+
+    </nav>
+
+
+    <button
+        id="themeBtn"
+        class="icon-btn"
+    >
+        🌙
+    </button>
+
+</header>
+
+
+
+<main class="container page">
+
+
+    <!-- DASHBOARD HEADER -->
+
+    <div class="page-head">
+
+        <div>
+
+            <h1>
+                Welcome to CollegeHub 👋
+            </h1>
+
+            <p>
+                Track your placement preparation from one place.
+            </p>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- PREPARATION STATS -->
+
+    <section class="dashboard-section">
+
+        <div class="section-title">
+
+            <h2>
+                📊 Placement Preparation
+            </h2>
+
+        </div>
+
+
+        <div class="dashboard-stats">
+
+
+            <!-- INTERVIEW QUESTIONS -->
+
+            <div class="dashboard-stat-card">
+
+                <div class="stat-icon">
+                    📚
+                </div>
+
+                <div>
+
+                    <h3>
+                        Interview Questions
+                    </h3>
+
+                    <strong id="dashboardInterviewProgress">
+                        0%
+                    </strong>
+
+                    <p id="dashboardInterviewText">
+                        0 / 0 Completed
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- BOOKMARKS -->
+
+            <div class="dashboard-stat-card">
+
+                <div class="stat-icon">
+                    ⭐
+                </div>
+
+                <div>
+
+                    <h3>
+                        Bookmarked
+                    </h3>
+
+                    <strong id="dashboardBookmarks">
+                        0
+                    </strong>
+
+                    <p>
+                        Saved Questions
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- MOCK INTERVIEWS -->
+
+            <div class="dashboard-stat-card">
+
+                <div class="stat-icon">
+                    🎤
+                </div>
+
+                <div>
+
+                    <h3>
+                        Mock Interviews
+                    </h3>
+
+                    <strong id="dashboardMockInterviews">
+                        0
+                    </strong>
+
+                    <p>
+                        Completed
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- BEST SCORE -->
+
+            <div class="dashboard-stat-card">
+
+                <div class="stat-icon">
+                    🏆
+                </div>
+
+                <div>
+
+                    <h3>
+                        Best Score
+                    </h3>
+
+                    <strong id="dashboardBestScore">
+                        0%
+                    </strong>
+
+                    <p>
+                        Mock Interview
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- TASKS -->
+
+            <div class="dashboard-stat-card">
+
+                <div class="stat-icon">
+                    📋
+                </div>
+
+                <div>
+
+                    <h3>
+                        Tasks
+                    </h3>
+
+                    <strong id="dashboardTasks">
+                        0
+                    </strong>
+
+                    <p id="dashboardTaskText">
+                        0 Completed
+                    </p>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- INTERVIEW PROGRESS -->
+
+    <section class="dashboard-section">
+
+
+        <div class="dashboard-progress-card">
+
+            <div class="progress-header">
+
+                <div>
+
+                    <h2>
+                        🎯 Interview Preparation
+                    </h2>
+
+                    <p>
+                        Your overall interview question progress.
+                    </p>
+
+                </div>
+
+
+                <strong
+                    id="dashboardProgressPercent"
+                >
+                    0%
+                </strong>
+
+            </div>
+
+
+            <div class="progress-track">
+
+                <div
+                    id="dashboardProgressBar"
+                    class="progress-fill"
+                ></div>
+
+            </div>
+
+
+            <p
+                id="dashboardProgressMessage"
+                class="dashboard-progress-message"
+            >
+                Start practicing interview questions.
+            </p>
+
+
+            <a
+                href="interview.html"
+                class="dashboard-action-btn"
+            >
+                🚀 Continue Preparation
+            </a>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- MOCK INTERVIEW PERFORMANCE -->
+
+    <section class="dashboard-section">
+
+
+        <div class="dashboard-performance-card">
+
+            <h2>
+                🎤 Mock Interview Performance
+            </h2>
+
+
+            <div class="performance-grid">
+
+
+                <div>
+
+                    <span>
+                        Total Interviews
+                    </span>
+
+                    <strong
+                        id="performanceTotal"
+                    >
+                        0
+                    </strong>
+
+                </div>
+
+
+                <div>
+
+                    <span>
+                        Best Score
+                    </span>
+
+                    <strong
+                        id="performanceBest"
+                    >
+                        0%
+                    </strong>
+
+                </div>
+
+
+                <div>
+
+                    <span>
+                        Average Score
+                    </span>
+
+                    <strong
+                        id="performanceAverage"
+                    >
+                        0%
+                    </strong>
+
+                </div>
+
+
+            </div>
+
+
+            <a
+                href="interview.html"
+                class="dashboard-secondary-btn"
+            >
+                📜 View Interview History
+            </a>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- QUICK ACTIONS -->
+
+    <section class="dashboard-section">
+
+
+        <h2>
+            ⚡ Quick Actions
+        </h2>
+
+
+        <div class="quick-actions">
+
+
+            <a
+                href="interview.html"
+                class="quick-action"
+            >
+
+                <span>
+                    🎯
+                </span>
+
+                <strong>
+                    Practice Questions
+                </strong>
+
+                <small>
+                    Improve interview knowledge
+                </small>
+
+            </a>
+
+
+
+            <a
+                href="interview.html"
+                class="quick-action"
+            >
+
+                <span>
+                    🎤
+                </span>
+
+                <strong>
+                    Mock Interview
+                </strong>
+
+                <small>
+                    Test yourself
+                </small>
+
+            </a>
+
+
+
+            <a
+                href="tasks.html"
+                class="quick-action"
+            >
+
+                <span>
+                    📋
+                </span>
+
+                <strong>
+                    My Tasks
+                </strong>
+
+                <small>
+                    Manage your preparation tasks
+                </small>
+
+            </a>
+
+
+
+            <a
+                href="placement.html"
+                class="quick-action"
+            >
+
+                <span>
+                    💼
+                </span>
+
+                <strong>
+                    Placement
+                </strong>
+
+                <small>
+                    Prepare for placements
+                </small>
+
+            </a>
+
+
+
+            <a
+                href="notes.html"
+                class="quick-action"
+            >
+
+                <span>
+                    📝
+                </span>
+
+                <strong>
+                    My Notes
+                </strong>
+
+                <small>
+                    Review your notes
+                </small>
+
+            </a>
+
+
+        </div>
+
+    </section>
+
+
+</main>
+
+
+
+<script src="../js/common.js"></script>
+
+<script src="../js/dashboard.js"></script>
+
+
+</body>
+
+</html>

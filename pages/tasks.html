@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tasks | CollegeHub</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+    <header class="topbar">
+        <a class="brand" href="../index.html">
+            <span>CH</span> CollegeHub
+        </a>
+
+        <nav>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="tasks.html">Tasks</a>
+            <a href="placement.html">Placement</a>
+            <a href="notes.html">Notes</a>
+            <a href="interview.html">Interview Prep</a>
+        </nav>
+
+        <button id="themeBtn" class="icon-btn" type="button">🌙</button>
+    </header>
+
+
+    <main class="container page">
+
+        <!-- PAGE HEADER -->
+        <div class="page-head">
+            <div>
+                <h1>📋 My Tasks</h1>
+                <p>Manage your placement preparation tasks.</p>
+            </div>
+        </div>
+
+
+        <!-- TASK STATS -->
+        <section class="task-stats-grid">
+            <div class="task-stat-card">
+                <span>📋</span>
+                <div>
+                    <strong id="totalTasks">0</strong>
+                    <small>Total Tasks</small>
+                </div>
+            </div>
+
+            <div class="task-stat-card">
+                <span>✅</span>
+                <div>
+                    <strong id="completedTasks">0</strong>
+                    <small>Completed</small>
+                </div>
+            </div>
+
+            <div class="task-stat-card">
+                <span>⏳</span>
+                <div>
+                    <strong id="pendingTasks">0</strong>
+                    <small>Pending</small>
+                </div>
+            </div>
+
+            <div class="task-stat-card">
+                <span>📊</span>
+                <div>
+                    <strong id="taskProgress">0%</strong>
+                    <small>Progress</small>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ADD TASK -->
+        <section class="add-task-card">
+            <div class="section-title">
+                <h2>➕ Add New Task</h2>
+                <p>Add a task to your placement preparation plan.</p>
+            </div>
+
+            <div class="form-group">
+                <label for="taskInput">Task Title</label>
+                <input id="taskInput" type="text" placeholder="e.g. Complete JavaScript Operators">
+            </div>
+
+            <div class="task-form-row">
+                <div class="form-group">
+                    <label for="taskCategory">Category</label>
+                    <select id="taskCategory">
+                        <option value="General">General</option>
+                        <option value="DSA">DSA</option>
+                        <option value="JavaScript">JavaScript</option>
+                        <option value="C++">C++</option>
+                        <option value="Interview">Interview</option>
+                        <option value="Projects">Projects</option>
+                        <option value="Placement">Placement</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="taskPriority">Priority</label>
+                    <select id="taskPriority">
+                        <option value="Low">Low</option>
+                        <option value="Medium" selected>Medium</option>
+                        <option value="High">High</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="taskDescription">Description</label>
+                <textarea id="taskDescription" placeholder="Write a short description..."></textarea>
+            </div>
+
+            <button id="addTaskBtn" class="task-add-btn" type="button" onclick="addTask()">+ Add Task</button>
+        </section>
+
+
+        <!-- SEARCH / FILTER -->
+        <section class="task-controls">
+            <input id="taskSearch" type="text" placeholder="🔍 Search tasks..." oninput="displayTasks()">
+
+            <select id="taskCategoryFilter" onchange="displayTasks()">
+                <option value="All">All Categories</option>
+                <option value="General">General</option>
+                <option value="DSA">DSA</option>
+                <option value="JavaScript">JavaScript</option>
+                <option value="C++">C++</option>
+                <option value="Interview">Interview</option>
+                <option value="Projects">Projects</option>
+                <option value="Placement">Placement</option>
+            </select>
+
+            <select id="taskStatusFilter" onchange="displayTasks()">
+                <option value="All">All Status</option>
+                <option value="Pending">Pending</option>
+                <option value="Completed">Completed</option>
+            </select>
+        </section>
+
+
+        <!-- TASK LIST CONTAINER -->
+        <section class="task-list-section">
+            <div id="tasksList"></div>
+        </section>
+
+    </main>
+
+    <script src="../js/common.js"></script>
+    <script src="../js/tasks.js"></script>
+
+</body>
+</html>

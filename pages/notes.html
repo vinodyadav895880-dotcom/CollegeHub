@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1"
+    >
+
+    <title>Notes | CollegeHub</title>
+
+    <link
+        rel="stylesheet"
+        href="../css/style.css"
+    >
+
+</head>
+
+
+<body>
+
+
+<header class="topbar">
+
+    <a
+        class="brand"
+        href="../index.html"
+    >
+        <span>CH</span>
+        CollegeHub
+    </a>
+
+
+    <nav>
+
+        <a href="dashboard.html">
+            Dashboard
+        </a>
+
+        <a href="tasks.html">
+            Tasks
+        </a>
+
+        <a href="placement.html">
+            Placement
+        </a>
+
+        <a href="notes.html">
+            Notes
+        </a>
+
+        <a href="interview.html">
+            Interview Prep
+        </a>
+
+    </nav>
+
+
+    <button
+        id="themeBtn"
+        class="icon-btn"
+    >
+        🌙
+    </button>
+
+</header>
+
+
+
+<main class="container page">
+
+
+    <!-- PAGE HEADER -->
+
+    <div class="page-head">
+
+        <div>
+
+            <h1>
+                📝 My Notes
+            </h1>
+
+            <p>
+                Save and manage your important study notes.
+            </p>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- ADD NOTE -->
+
+    <form
+        id="noteForm"
+        class="card note-form"
+    >
+
+        <h2>
+            ➕ Create New Note
+        </h2>
+
+
+        <div class="form-grid">
+
+
+            <input
+                id="noteTitle"
+                placeholder="Note title"
+                required
+            >
+
+
+            <input
+                id="noteTag"
+                placeholder="Tag e.g. JavaScript"
+            >
+
+
+            <textarea
+                id="noteBody"
+                class="full"
+                placeholder="Write your note..."
+                required
+            ></textarea>
+
+
+        </div>
+
+
+        <div class="form-actions">
+
+            <button
+                type="submit"
+                class="btn primary"
+            >
+                💾 Save Note
+            </button>
+
+        </div>
+
+    </form>
+
+
+
+    <!-- SEARCH -->
+
+    <section class="notes-tools">
+
+        <input
+            id="noteSearch"
+            type="text"
+            placeholder="🔍 Search notes..."
+        >
+
+
+        <select id="noteFilter">
+
+            <option value="all">
+                All Notes
+            </option>
+
+            <option value="JavaScript">
+                JavaScript
+            </option>
+
+            <option value="HTML">
+                HTML
+            </option>
+
+            <option value="CSS">
+                CSS
+            </option>
+
+            <option value="DSA">
+                DSA
+            </option>
+
+            <option value="C++">
+                C++
+            </option>
+
+            <option value="Interview">
+                Interview
+            </option>
+
+            <option value="Other">
+                Other
+            </option>
+
+        </select>
+
+    </section>
+
+
+
+    <!-- NOTES COUNT -->
+
+    <div
+        id="notesCount"
+        class="notes-count"
+    >
+        0 Notes
+    </div>
+
+
+
+    <!-- NOTES LIST -->
+
+    <section
+        id="notesList"
+        class="notes-grid"
+    ></section>
+
+
+</main>
+
+
+
+<script src="../js/common.js"></script>
+
+<script src="../js/notes.js"></script>
+
+
+</body>
+
+</html>
