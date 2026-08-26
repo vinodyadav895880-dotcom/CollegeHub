@@ -1,19 +1,30 @@
 # 🎓 CollegeHub — Placement Preparation Platform
 
-> **A modern student-focused web platform to manage placement preparation, interview practice, tasks, notes, mock interviews, and progress tracking — all in one place.**
+<p align="center">
+
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-222222?style=for-the-badge&logo=github&logoColor=white)
+
+</p>
 
 <p align="center">
   <strong>Learn → Practice → Track → Improve → Get Placement Ready 🚀</strong>
+</p>
+
+<p align="center">
+  A student-focused placement preparation platform built with HTML, CSS and JavaScript.
 </p>
 
 ---
 
 ## 🌐 Live Demo
 
-🔗 **Live Website:**
+🔗 **Live Website:**  
 https://vinodyadav895880-dotcom.github.io/CollegeHub/
 
-🔗 **GitHub Repository:**
+🔗 **GitHub Repository:**  
 https://github.com/vinodyadav895880-dotcom/CollegeHub
 
 ---
@@ -22,9 +33,11 @@ https://github.com/vinodyadav895880-dotcom/CollegeHub
 
 **CollegeHub** is a frontend web application designed to help college students organize and track their placement preparation from a single platform.
 
-Instead of managing interview questions, tasks, notes, placement preparation, and mock interviews separately, CollegeHub brings these features together into one simple and interactive dashboard.
+The platform brings interview preparation, placement tasks, personal notes, mock interviews and progress tracking together in one simple and interactive application.
 
-The application uses **HTML, CSS, and JavaScript** with **LocalStorage** for client-side data persistence.
+CollegeHub uses **HTML5, CSS3 and JavaScript** for the frontend and **LocalStorage** for client-side data persistence.
+
+The project is designed as a practical student productivity and placement preparation platform.
 
 ---
 
@@ -32,69 +45,82 @@ The application uses **HTML, CSS, and JavaScript** with **LocalStorage** for cli
 
 ### 🏠 Home Page
 
-* Modern landing page
-* Placement preparation introduction
-* Quick navigation to major modules
-* Interview question search
-* Interview category shortcuts
-* Quick actions
-* Interview progress overview
-* Completed questions counter
-* Bookmark counter
-* Mock interview counter
+- Modern landing page
+- Placement preparation introduction
+- Quick navigation
+- Interview question search
+- Interview category shortcuts
+- Quick action cards
+- Interview progress overview
+- Completed question counter
+- Bookmark counter
+- Mock interview counter
 
 ---
 
 ### 📊 Dashboard
 
-* Overall placement preparation overview
-* Interview progress tracking
-* Completed question statistics
-* Bookmark statistics
-* Mock interview statistics
-* Best mock interview score
-* Average mock interview score
-* Centralized progress information
+The dashboard provides an overview of the student's placement preparation.
+
+Features include:
+
+- Interview progress
+- Completed questions
+- Bookmarked questions
+- Mock interview statistics
+- Best mock interview score
+- Average mock interview score
+- Preparation overview
 
 ---
 
-### 📝 Task Management
+### 📋 Task Management
 
-* Add tasks
-* Edit tasks
-* Delete tasks
-* Mark tasks as completed
-* Track task status
-* Persistent data using LocalStorage
-* Data remains available after page refresh
+CollegeHub provides a simple task management system for placement preparation.
+
+Features:
+
+- Add tasks
+- Edit tasks
+- Delete tasks
+- Mark tasks as completed
+- Track task status
+- Persistent task data
+- Data remains available after page refresh
 
 ---
 
 ### 📝 Notes Management
 
-* Create personal notes
-* Edit notes
-* Delete notes
-* Store notes locally
-* Persistent notes after refresh
-* Simple student-friendly interface
+Students can maintain their important study and placement notes.
+
+Features:
+
+- Add notes
+- Edit notes
+- Delete notes
+- Store notes locally
+- Persistent notes after refresh
+- Simple and clean interface
 
 ---
 
 ### 💼 Placement Preparation
 
-Placement checklist to track important preparation activities:
+The Placement section provides a preparation checklist.
 
-* Resume preparation
-* DSA preparation
-* Core subject revision
-* Project preparation
-* GitHub profile preparation
-* Mock interview preparation
-* HR interview preparation
-* Job application preparation
+Students can track:
 
-The checklist automatically calculates and displays completion progress.
+- 📄 Resume preparation
+- 💻 DSA preparation
+- 🧠 Core subject revision
+- 🚀 Project preparation
+- 🐙 GitHub profile preparation
+- 🎤 Mock interview preparation
+- 🗣️ HR interview preparation
+- 📩 Job applications
+
+The preparation progress is automatically calculated.
 
 ---
 
@@ -104,42 +130,42 @@ Interview questions are organized by category and difficulty.
 
 #### Categories
 
-* HTML
-* CSS
-* JavaScript
-* DSA
+- HTML
+- CSS
+- JavaScript
+- DSA
 
 #### Difficulty Levels
 
-* 🟢 Easy
-* 🟡 Medium
-* 🔴 Hard
+- 🟢 Easy
+- 🟡 Medium
+- 🔴 Hard
 
-#### Features
+#### Interview Features
 
-* Search interview questions
-* Filter by category
-* Filter by difficulty
-* Filter by completion status
-* Filter bookmarked questions
-* Expand/collapse questions
-* View answers
-* Bookmark questions
-* Mark questions as completed
-* Persistent progress using LocalStorage
+- Search questions
+- Filter by category
+- Filter by difficulty
+- Filter completed questions
+- Filter bookmarked questions
+- Expand and collapse questions
+- View answers
+- Bookmark questions
+- Mark questions as completed
+- Persistent progress using LocalStorage
 
 ---
 
 ### 🎲 Random Interview Question
 
-The Random Question feature helps students practice without selecting a specific topic.
+Students can generate a random interview question for quick practice.
 
 Features:
 
-* Generate random interview questions
-* Show/hide answer
-* Bookmark question
-* Mark question as completed
+- Random question generation
+- Show/hide answer
+- Bookmark question
+- Mark question as completed
 
 ---
 
@@ -149,57 +175,91 @@ CollegeHub includes an interactive mock interview system.
 
 Features:
 
-* 10 randomly selected questions
-* 10-minute countdown timer
-* Question-by-question navigation
-* Show/hide answers
-* Self-assessment:
+- 10 random interview questions
+- 10-minute countdown timer
+- Question-by-question navigation
+- Show/hide answers
+- Self-assessment system
+- Score calculation
+- Percentage calculation
+- Performance feedback
+- Best score tracking
+- Try again functionality
 
-  * ✅ I Knew It
-  * ❌ I Didn't Know
-* Automatic score calculation
-* Percentage calculation
-* Performance feedback
-* Best score tracking
-* Try again option
+Self-assessment options:
+
+- ✅ I Knew It
+- ❌ I Didn't Know
 
 ---
 
 ### 📜 Mock Interview History
 
-Every completed mock interview can be tracked through the history system.
+Completed mock interviews are stored in the history section.
 
-Displays:
+The history displays:
 
-* Total interviews
-* Best score
-* Average score
-* Individual interview scores
-* Interview date and time
-* Score percentage
+- Total interviews
+- Best score
+- Average score
+- Individual interview scores
+- Score percentage
+- Interview date and time
 
-The application stores the latest **20 mock interview results**.
+The application keeps the latest **20 mock interview results**.
 
 ---
 
 ### 🌙 Theme Support
 
-CollegeHub includes a theme toggle for a more comfortable user experience.
+CollegeHub includes a theme toggle to improve the user experience.
+
+---
+
+## 📸 Project Screenshots
+
+### 📊 Dashboard
+
+![CollegeHub Dashboard](screenshots/dashboard.png)
+
+---
+
+### 🎯 Interview Preparation
+
+![CollegeHub Interview Preparation](screenshots/interview.png)
+
+---
+
+### 💼 Placement Preparation
+
+![CollegeHub Placement](screenshots/placement.png)
+
+---
+
+### 📝 Notes
+
+![CollegeHub Notes](screenshots/notes.png)
+
+---
+
+### 📋 Tasks
+
+![CollegeHub Tasks](screenshots/tasks.png)
 
 ---
 
 ## 🛠️ Technologies Used
 
-| Technology   | Purpose                             |
-| ------------ | ----------------------------------- |
-| HTML5        | Page structure and semantic markup  |
-| CSS3         | Styling, layout and responsive UI   |
-| JavaScript   | Application logic and interactivity |
-| DOM API      | Dynamic page manipulation           |
-| LocalStorage | Client-side data persistence        |
-| Git          | Version control                     |
-| GitHub       | Source code hosting                 |
-| GitHub Pages | Live deployment                     |
+| Technology | Purpose |
+|---|---|
+| HTML5 | Page structure and semantic markup |
+| CSS3 | Styling, layouts and responsive design |
+| JavaScript | Application logic and interactivity |
+| DOM API | Dynamic page manipulation |
+| LocalStorage | Client-side data persistence |
+| Git | Version control |
+| GitHub | Source code hosting |
+| GitHub Pages | Live deployment |
 
 ---
 
@@ -207,8 +267,6 @@ CollegeHub includes a theme toggle for a more comfortable user experience.
 
 ```text
 CollegeHub/
-│
-├── index.html
 │
 ├── css/
 │   └── style.css
@@ -229,253 +287,13 @@ CollegeHub/
 │   ├── placement.html
 │   └── tasks.html
 │
-├── .gitignore
+├── screenshots/
+│   ├── dashboard.png
+│   ├── interview.png
+│   ├── placement.png
+│   ├── notes.png
+│   └── tasks.png
 │
-└── README.md
-```
-
----
-
-## ⚙️ How to Run Locally
-
-### 1. Clone the repository
-
-```bash
-git clone https://github.com/vinodyadav895880-dotcom/CollegeHub.git
-```
-
-### 2. Open the project
-
-```bash
-cd CollegeHub
-```
-
-### 3. Run the project
-
-Since CollegeHub is a frontend application, no backend installation is required.
-
-You can open:
-
-```text
-index.html
-```
-
-directly in a browser.
-
-For a better development experience, use **VS Code + Live Server**.
-
----
-
-## 💾 Data Storage
-
-CollegeHub currently uses the browser's **LocalStorage API** for data persistence.
-
-The following information can be stored locally:
-
-* Tasks
-* Task completion status
-* Notes
-* Interview completion status
-* Bookmarked questions
-* Placement checklist
-* Mock interview history
-* Best mock interview score
-* Theme preference
-
-### Important
-
-Because LocalStorage is browser-specific, data is stored locally on the user's device/browser.
-
-There is currently no backend database or user authentication system.
-
----
-
-## 🧪 Project Testing
-
-The live application was manually tested feature-by-feature.
-
-### Functional Testing
-
-| Module                       | Status |
-| ---------------------------- | ------ |
-| Navigation                   | ✅ PASS |
-| Task Add                     | ✅ PASS |
-| Task Complete + Refresh      | ✅ PASS |
-| Task Edit + Refresh          | ✅ PASS |
-| Task Delete + Refresh        | ✅ PASS |
-| Notes Add                    | ✅ PASS |
-| Notes Edit + Refresh         | ✅ PASS |
-| Notes Delete + Refresh       | ✅ PASS |
-| Placement Checklist          | ✅ PASS |
-| Placement 100% + Refresh     | ✅ PASS |
-| Interview Questions          | ✅ PASS |
-| Bookmark + Refresh           | ✅ PASS |
-| Interview Complete + Refresh | ✅ PASS |
-| Random Question              | ✅ PASS |
-| Mock Interview               | ✅ PASS |
-| Mock History + Refresh       | ✅ PASS |
-| Dashboard Statistics         | ✅ PASS |
-| Home Integration             | ✅ PASS |
-
-**Current functional testing status: 100% PASS ✅**
-
----
-
-## 🎯 Project Goals
-
-CollegeHub was developed with the following goals:
-
-* Make placement preparation organized
-* Provide easy access to interview questions
-* Track preparation progress
-* Encourage regular interview practice
-* Provide mock interview experience
-* Keep important notes and tasks together
-* Give students a simple preparation dashboard
-
----
-
-## 🚀 Future Improvements
-
-The project can be extended with:
-
-### 🔐 Authentication
-
-* User registration
-* Login/logout
-* Individual student profiles
-* Password recovery
-
-### ☁️ Backend & Database
-
-* Node.js backend
-* Express.js
-* MongoDB / PostgreSQL
-* Cloud data synchronization
-
-### 📚 More Interview Topics
-
-* C
-* C++
-* Java
-* Python
-* DBMS
-* Operating Systems
-* Computer Networks
-* OOP
-* SQL
-* System Design
-
-### 🤖 AI Features
-
-* AI interview interviewer
-* AI-generated questions
-* AI answer evaluation
-* Personalized study recommendations
-* AI resume feedback
-
-### 📈 Advanced Analytics
-
-* Weekly preparation reports
-* Preparation streaks
-* Topic-wise performance
-* Difficulty-wise performance
-* Progress charts
-* Personalized improvement suggestions
-
-### 📱 Mobile Support
-
-* Progressive Web App (PWA)
-* Mobile-first improvements
-* Push notifications
-* Offline support
-
----
-
-## 🔮 Planned Architecture
-
-The current project is a frontend-only application.
-
-A future production architecture could look like:
-
-```text
-Frontend
-   │
-   ├── HTML
-   ├── CSS
-   └── JavaScript
-          │
-          ▼
-      REST API
-          │
-          ▼
-      Node.js
-       + Express
-          │
-          ▼
-       Database
-     MongoDB / SQL
-```
-
-This would allow user accounts, cloud synchronization and personalized preparation data.
-
----
-
-## 📈 Learning Outcomes
-
-Building CollegeHub provided practical experience with:
-
-* HTML5 page structuring
-* CSS layouts and responsive design
-* JavaScript fundamentals
-* DOM manipulation
-* Event handling
-* Array methods
-* Objects and data structures
-* JSON
-* LocalStorage
-* Dynamic UI generation
-* Search and filtering
-* Timers
-* Randomization
-* CRUD operations
-* Git and GitHub
-* GitHub Pages deployment
-* Manual application testing
-
----
-
-## 👨‍💻 Author
-
-### Vinod Yadav
-
-**B.Tech — Information Technology**
-
-Interested in:
-
-* Web Development
-* JavaScript
-* DSA
-* Software Development
-* AI/ML
-* Placement Preparation
-
----
-
-## ⭐ Support
-
-If you find this project useful, consider giving the repository a ⭐ on GitHub.
-
----
-
-## 📄 License
-
-This project is created for educational and portfolio purposes.
-
----
-
-<p align="center">
-  <strong>CollegeHub 🎓</strong>
-  <br>
-  <em>Prepare Today. Perform Tomorrow. 🚀</em>
-</p>
+├── index.html
+├── README.md
+└── .gitignore
